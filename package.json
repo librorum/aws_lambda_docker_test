@@ -1,0 +1,32 @@
+{
+  "name": "aws_lambda_docker_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "./test.sh",
+    "dev": "docker run -p 9000:8080 random-letter:latest",
+    "build": "docker build -t random-letter ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/librorum/aws_lambda_docker_test.git"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "container",
+    "docker"
+  ],
+  "author": "librorum@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/librorum/aws_lambda_docker_test/issues"
+  },
+  "homepage": "https://github.com/librorum/aws_lambda_docker_test#readme",
+  "dependencies": {
+    "faker": "^5.5.3",
+    "get-stream": "^6.0.1",
+    "pdfkit": "^0.13.0"
+  }
+}
